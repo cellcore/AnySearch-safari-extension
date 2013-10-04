@@ -2,6 +2,7 @@ const app = safari.application,
 	  ext = safari.extension;
 app.addEventListener('beforeSearch', handleBeforeSearch, false);
 
+<<<<<<< HEAD
 // Google Analytics
 var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-125911-12']);
@@ -28,6 +29,8 @@ var _gaq = _gaq || [];
 	ext.settings.version = 110;
 })()
 
+=======
+>>>>>>> DoNotTrack
 function handleBeforeSearch(e) {
 	e.preventDefault();
 	var url = ext.settings.engine;
